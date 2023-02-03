@@ -21,7 +21,7 @@ args = parser.parse_args()
 if args.station is not None:
 	config = 'config_{}.toml'.format(args.station)
 else:
-	config = 'config.toml'
+	config = 'config_ps113.toml'
 
 
 tr_input = trace_source.simulations.gen_input(config_file=config)
